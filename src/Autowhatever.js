@@ -239,7 +239,7 @@ export default class Autowhatever extends Component {
         const [newFocusedSectionIndex, newFocusedItemIndex] =
           this.sectionIterator[nextPrev]([focusedSectionIndex, focusedItemIndex]);
 
-        inputProps.onKeyDown(event, { newFocusedSectionIndex, newFocusedItemIndex });
+        inputProps.onKeyDown(event, { newFocusedSectionIndex: newFocusedSectionIndex, newFocusedItemIndex:  newFocusedItemIndex || 0 });
         break;
       }
 
